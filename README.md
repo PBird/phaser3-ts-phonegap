@@ -1,8 +1,13 @@
-# Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
+# PhoneGap Template
 
-A PhoneGap Hello World template
+A phaser phoneGap typescript template
 
 ## Usage
+
+    git clone https://github.com/PBird/phaser3-ts-phonegap
+    npm install
+    phonegap platform add browser android
+    npm run serve
 
 #### PhoneGap CLI
 

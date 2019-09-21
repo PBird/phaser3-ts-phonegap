@@ -1,0 +1,52 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "org.d0zzerr.FliPet"
+    },
+    "cordova-plugin-browsersync": {
+      "PACKAGE_NAME": "org.d0zzerr.FliPet"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "org.d0zzerr.FliPet"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "org.d0zzerr.FliPet"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "org.d0zzerr.FliPet"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "org.d0zzerr.FliPet"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "org.d0zzerr.FliPet"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "org.d0zzerr.FliPet"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "org.d0zzerr.FliPet"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "org.d0zzerr.FliPet"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "org.d0zzerr.FliPet"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "org.d0zzerr.FliPet"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "org.d0zzerr.FliPet"
+    }
+  }
+}

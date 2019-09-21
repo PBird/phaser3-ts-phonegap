@@ -1,11 +1,13 @@
 var path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
 var pathToPhaser = path.join(__dirname, '/node_modules/phaser/');
 var phaser = path.join(pathToPhaser, 'dist/phaser.js');
 
+
 module.exports = {
-  entry: './src/boilerplate/game.ts',
+  entry: './src/game.ts',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'www/js'),
     filename: 'bundle.js',
   },
   module: {
@@ -16,7 +18,7 @@ module.exports = {
   },
   devServer: {
     contentBase: path.resolve(__dirname, './'),
-    publicPath: '/dist/',
+    publicPath: '/www/',
     host: '127.0.0.1',
     port: 8080,
     open: true
@@ -26,5 +28,10 @@ module.exports = {
     alias: {
       phaser: phaser
     }
-  }
+  },
+  plugins: [
+    new CopyPlugin([
+      { from: 'src/assets', to: '../assets', force: true }
+    ]),
+  ],
 };

@@ -1,151 +1,68 @@
-<p align="center">
-  <img width=100% src="https://github.com/digitsensitive/phaser3-typescript/blob/master/assets/github/phaser3-typescript.png">
-  Phaser 3 Game Examples written in TypeScript.
-</p>
+# Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[![dependencies status badge](https://david-dm.org/digitsensitive/phaser3-typescript/status.svg)](https://david-dm.org/digitsensitive/phaser3-typescript)
-[![development dependencies status badge](https://david-dm.org/digitsensitive/phaser3-typescript/dev-status.svg)](https://david-dm.org/digitsensitive/phaser3-typescript/?type=dev)
-[![GitHub issues](https://img.shields.io/github/issues/digitsensitive/phaser3-typescript.svg)](https://github.com/digitsensitive/phaser3-typescript/issues)
-[![GitHub stars](https://img.shields.io/github/stars/digitsensitive/phaser3-typescript.svg)](https://github.com/digitsensitive/phaser3-typescript/stargazers)
-![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
-[![GitHub license](https://img.shields.io/github/license/digitsensitive/phaser3-typescript.svg)](https://github.com/digitsensitive/phaser3-typescript)
+A PhoneGap Hello World template
 
-<div align="center">
-  <sub>Examples made with ❤︎ by <a href="https://github.com/digitsensitive">digitsensitive</a></br>
-  Framework created by <a href="https://github.com/photonstorm">Photonstorm</a></sub>
-</div>
+## Usage
 
-# Phaser 3 and TypeScript
+#### PhoneGap CLI
 
-[Phaser](https://github.com/photonstorm/phaser) is a wonderful, fast and
-free open source HTML5 game framework.
-Here you will find everything you need to develop games with Phaser 3
-in TypeScript. Have fun discovering, developing and playing!
-Ideas and corrections are highly desirable to constantly
-improve this repository!
+The hello-world template is the default when you create a new application using the [phonegap-cli][phonegap-cli-url].
 
-<div align="center">
-<a href="https://www.buymeacoffee.com/JZDVjsT26" target="blank">
-<img src="https://www.buymeacoffee.com/assets/img/custom_images/black_img.png" alt="Buy Me A Coffee" style="height: auto !important; width: auto !important;"></a>
-</div>
+    phonegap create my-app
 
-## Getting started
+Create an app using this template specifically:
 
-### Prerequisites
+    phonegap create my-app --template hello-world
 
-```
-Download and install npm with Node.js @ https://nodejs.org/en
-```
+To see a list of other available PhoneGap templates:
 
-### Installing
+    phonegap template list
 
-Select a folder, navigate to it, and clone this repository
-with this command-line:
+## [config.xml][config-xml]
 
-```
-git clone https://github.com/digitsensitive/phaser3-typescript.git
-```
+#### android-minSdkVersion (Android only)
 
-Install the dependencies with this command-line:
+Minimum SDK version supported on the target device. Maximum version is blank by default.
 
-```
-npm install
-```
-> If you use yarn just replace `npm` with `yarn`
+This template sets the minimum to `14`.
 
-### Building and Running
+    <preference name="android-minSdkVersion" value="14" />
 
-Perform a quick build (bundle.js) and start server:
+#### &lt;access ...&gt; (All)
 
-```
-npm run dev
-```
-> If you use yarn just replace `npm` with `yarn`
+This template defaults to wide open access.
 
-## Game Examples
+    <access origin="*" />
 
-![Beginner](https://img.shields.io/badge/Difficulty-Beginner-green.svg)
+It is strongly encouraged that you restrict access to external resources in your application before releasing to production.
 
-<p float="left">
-  <a href="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/coin-runner/coin-runner.md"><img src="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/coin-runner/assets/github/coinRunner.png" width="420" /></a>
-  <a href="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/alpha-adjust/alpha-adjust.md"><img src="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/alpha-adjust/assets/github/alphaAdjust.png" width="420" /></a>
-</p>
-<p float="left">
-  <a href="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/snake/snake.md">
-  <img src="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/snake/assets/github/snake.png" width="420" /></a>
-  <a href="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/blockade/blockade.md"><img src="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/blockade/assets/github/blockade.png" width="420" /></a>
-</p>
-<p float="left">
-  <a href="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/asteroid/asteroid.md">
-  <img src="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/asteroid/assets/github/asteroid.png" width="420" /></a>
-  <a href="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/flappy-bird/flappy-bird.md"><img src="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/flappy-bird/assets/github/flappyBird.png" width="420" /></a>
-</p>
+For more information on whitelist configuration, see the [Cordova Whitelist Guide][cordova-whitelist-guide] and the [Cordova Whitelist Plugin documentation][cordova-plugin-whitelist]
 
-![Intermediate](https://img.shields.io/badge/Difficulty-Intermediate-blue.svg)
+## [www/index.html][index-html]
 
-<p float="left">
-  <a href="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/space-invaders/space-invaders.md">
-  <img src="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/space-invaders/assets/github/spaceInvaders.png" width="420" /></a>
-  <a href="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/tank/tank.md">
-  <img src="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/tank/assets/github/tank.png" width="420" /></a>
-</p>
-<p float="left">
-  <a href="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/super-mario-land/super-mario-land.md">
-  <img src="https://github.com/digitsensitive/phaser3-typescript/blob/master/src/games/super-mario-land/assets/github/super-mario-land.png" width="420" /></a>
-</p>
+#### Content Security Policy (CSP)
 
-- If you have any suggestion for a next game example, let me know!
+The default CSP is similarly open:
 
-## Cheat Sheets
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
 
-- [Browse through the Cheat Sheets](https://github.com/digitsensitive/phaser3-typescript/blob/master/cheatsheets)
+Much like the access tag above, you are strongly encouraged to use a more restrictive CSP in production.
 
-## Tutorials
+A good starting point declaration might be:
 
-- [Learn to create a HTML5 Game in 5 Minutes](https://medium.com/@digit.sensitivee/learn-to-create-a-html5-game-in-5-minutes-604118f5d0ab)
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" />
 
-## External Resources
+For more information on the Content Security Policy, see the [section on CSP in the Cordova Whitelist Plugin documentation][cordova-plugin-whitelist-csp].
 
-- [Phaser 3 Framework](https://github.com/photonstorm/phaser)
-- [Phaser 3 Docs with TypeScript Definition File](https://github.com/photonstorm/phaser3-docs)
-- [Phaser 3 Online Docs](https://photonstorm.github.io/phaser3-docs/index.html)
-- [Phaser 3 Official Examples](https://github.com/photonstorm/phaser3-examples)
-- [Phaser 3 Discourse](https://phaser.discourse.group)
+Another good resource for generating a good CSP declaration is [CSP is Awesome][csp-is-awesome]
 
-## Helpful tools
-
-- [Leshy SpriteSheet Tool](https://www.leshylabs.com/apps/sstool)
-- [Tiled](https://www.mapeditor.org)
-- [Littera](http://kvazars.com/littera)
-- [Tile Extruder](https://github.com/sporadic-labs/tile-extruder)
-
-## TypeScript Configuration
-
-### tsconfig.json
-
-The following `Compiler Options` have been set in the `tsconfig.json` file:
-
-| Option | Value     |
-| :------------- | :------------- |
-| target       | ES2016 |
-| module       | CommonJS |
-| sourceMap    | true |
-| noImplicitAny| true [WIP] |
-| strict       | true [WIP] |
-
-You can see the complete list of the available options at [here](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
-Interesting read about [setting up a nodejs-project](https://codeburst.io/tips-for-setting-up-a-typescript-nodejs-project-5d1c48dc1a2d).
-
-## Changelog
-
-[Learn about the latest improvements](https://github.com/digitsensitive/phaser3-typescript/blob/master/CHANGELOG.md)
-
-## Contributing
-
-Want to correct a bug, contribute some code, or improve the codes? Excellent! Let me know!
-Please read [CONTRIBUTING.md](https://github.com/digitsensitive/phaser3-typescript/blob/master/CONTRIBUTING.md) for details on our code of conduct.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/digitsensitive/phaser3-typescript/blob/master/LICENSE) file for details.
+[phonegap-cli-url]: http://github.com/phonegap/phonegap-cli
+[cordova-app]: http://github.com/apache/cordova-app-hello-world
+[bithound-img]: https://www.bithound.io/github/phonegap/phonegap-app-hello-world/badges/score.svg
+[bithound-url]: https://www.bithound.io/github/phonegap/phonegap-app-hello-world
+[config-xml]: https://github.com/phonegap/phonegap-template-hello-world/blob/master/config.xml
+[index-html]: https://github.com/phonegap/phonegap-template-hello-world/blob/master/www/index.html
+[cordova-whitelist-guide]: https://cordova.apache.org/docs/en/dev/guide/appdev/whitelist/index.html
+[cordova-plugin-whitelist]: http://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist
+[cordova-plugin-whitelist-csp]: http://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist#content-security-policy
+[csp-is-awesome]: http://cspisawesome.com
